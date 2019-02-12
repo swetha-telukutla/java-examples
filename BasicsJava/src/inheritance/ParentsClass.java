@@ -1,5 +1,10 @@
 package inheritance;
 
+/**
+ * Added sample code to refer as parent class.
+ * @author SankarA
+ *
+ */
 public class ParentsClass {
 
 	public static void main(String[] args) {
