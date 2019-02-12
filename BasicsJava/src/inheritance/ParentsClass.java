@@ -4,9 +4,10 @@ public class ParentsClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-public void Vehicle(){
-	System.out.println("V");
-}
+	}
+
+	public void Vehicle() {
+		System.out.println("V");
 	}
 
 }
