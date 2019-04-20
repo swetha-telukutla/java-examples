@@ -5,7 +5,7 @@ public class CitiBank implements BankInterface {
 	@Override
 	public void depositMoney() {
 		// TODO Auto-generated method stub
-		static void (minBal);
+		System.out.println(minBal);
 		
 	}
 

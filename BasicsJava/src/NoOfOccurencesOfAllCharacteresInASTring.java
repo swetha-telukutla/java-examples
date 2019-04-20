@@ -2,37 +2,33 @@ import java.util.Scanner;
 
 public class NoOfOccurencesOfAllCharacteresInASTring {
 
+	// private static Scanner scan = null;
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String str = null;
+		System.out.println("Enter String : ");
+		str = scan.nextLine();
 
+		int[] count = new int[255];
 
-public static void main(String[] args) {
+		int length = str.length();
 
-    Scanner inp= new Scanner(System.in);
-    String str;
-    char ch;
-    int count=0;
+		for (int i = 0; i < length; i++) {
+			count[str.charAt(i)]++;
+		}
 
-    System.out.println("Enter the string:");
-    str=inp.nextLine();
+		char[] ch = new char[str.length()];
+		for (int i = 0; i < length; i++) {
+			ch[i] = str.charAt(i);
+			int find = 0;
+			for (int j = 0; j <= i; j++) {
+				if (str.charAt(i) == ch[j])
+					find++;
+			}
 
-    while(str.length()>0)
-    {
-        ch=str.charAt(0);
-        int i=0;
-
-        while(str.charAt(i)==ch)
-        {
-                count =count+i;
-                i++;
-        }
-
-        str.substring(count);
-        System.out.println(ch);
-        System.out.println(count);
-    }
-
+			if (find == 1) {
+				System.out.println("Number of Occurrence of " + str.charAt(i) + " letter is:" + count[str.charAt(i)]);
+			}
+		}
+	}
 }
-}
-
-
-
-

@@ -1,11 +1,24 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class QucikSort {
 	   public static void main(String[] args)
 	    {
-	        // This is unsorted array
-	        Integer[] array = new Integer[] { 12, 13, 24, 10, 3, 6, 90, 70 };
-	 
+		   Scanner sc = new Scanner(System.in);
+			System.out.print("Enter the size of the array : ");
+			int arrlen = sc.nextInt();
+			System.out.println();
+			
+			int[] array = new int[arrlen];
+			System.out.print("Enter the Integer numbers : ");
+			for (int i = 0; i < arrlen; i++) {
+				array[i] = sc.nextInt();
+			}
+			System.out.println("Input Elements");
+			for(int i = 0; i < array.length ; i++ ) {
+				System.out.print(array[i] + "\t");
+			}
+	       
 	        // Let's sort using quick sort
 	        quickSort( array, 0, array.length - 1 );
 	 

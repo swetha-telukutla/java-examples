@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Roman to Integer conversion
  * 
- * @author SankarA
+ * 
  *
  */
 public class Roman2Number {

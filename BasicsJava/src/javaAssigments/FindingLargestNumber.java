@@ -13,10 +13,10 @@ public class FindingLargestNumber {
 		 j=scan.nextInt();
 		 k=scan.nextInt();
 		System.out.println("numbers are="+i +" ," + j +", " + k);
-		if((i>=j)&&(i>=k)){
+		if((i>j)&&(i>k)){
 			System.out.println(i + "is the largest number");
 		}
-		if((j>=i)&&(j>=k)){
+		if((j>i)&&(j>k)){
 			System.out.println(j +"is the largest number");
 		}
 		else{
@@ -24,7 +24,7 @@ public class FindingLargestNumber {
 			
 		}
 		
-		
+		scan.close();
 
 	}
 

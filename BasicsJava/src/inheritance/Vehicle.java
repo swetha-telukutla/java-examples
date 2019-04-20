@@ -2,17 +2,14 @@ package inheritance;
 
 /**
  * Added sample code to refer as parent class.
- * @author SankarA
+ * 
  *
  */
-public class ParentsClass {
+public class Vehicle {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	}
+	public void move() {
+		System.out.println("Vehicle is a parent class");
 
-	public void Vehicle() {
-		System.out.println("V");
 	}
 
 }

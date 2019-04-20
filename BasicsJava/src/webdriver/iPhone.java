@@ -11,12 +11,13 @@ i.sendMSG();
 i.takeAPic();
 i.downLoadApp();
 	}
-	
+	//over ridden method
 	public void makeAcall(){
 	System.out.println("iphone is make a call");
 	}
+	//overloaded method
 	public void downLoadApp(){
-		System.out.println("iphone download app");
+		System.out.println("iphone is  downloading app");
 	}
 	public void downLoadApp(int a){
 		System.out.println("counting the no of downloaded apps");
